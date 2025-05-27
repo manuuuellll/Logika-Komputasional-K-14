@@ -2,22 +2,22 @@
 % File utama untuk menjalankan permainan Pokemon.
 
 % --- Deklarasi Dynamic Facts Utama ---
-% PASTIKAN SETIAP BARIS INI DIAKHIRI DENGAN TITIK.
-:- dynamic player_name/1.
-:- dynamic player_location/2.
-:- dynamic player_party/1.
-:- dynamic player_bag/1.
-:- dynamic map_layout/3.
-:- dynamic wild_pokemon_at/4.
-:- dynamic game_state/1.
-:- dynamic moves_left/1.
-:- dynamic heal_count/1.
+% Pastikan menggunakan tanda kurung untuk dynamic/1
+:- dynamic(player_name/1).
+:- dynamic(player_location/2).
+:- dynamic(player_party/1).
+:- dynamic(player_bag/1).
+:- dynamic(map_layout/3).
+:- dynamic(wild_pokemon_at/4).
+:- dynamic(game_state/1).
+:- dynamic(moves_left/1).
+:- dynamic(heal_count/1).
 
-% --- Memuat Modul-Modul Game dengan 'include' ---
-% PASTIKAN SETIAP BARIS INI JUGA DIAKHIRI DENGAN TITIK.
-:- include('facts.pl').
-:- include('rules.pl').
-:- include('start_game.pl').
+% --- Memuat Modul-Modul Game ---
+% GNU Prolog tidak mendukung include/1, gunakan consult/1
+:- consult('facts.pl').
+:- consult('rules.pl').
+:- consult('start_game.pl').
 
 % --- Main Game Predicate ---
 run_pokemon_game :-

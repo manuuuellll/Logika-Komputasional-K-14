@@ -4,7 +4,7 @@
 % use_module should be at the beginning of the file.
 % If 'unknown directive use_module/1' warning persists, your gprolog might
 % have random built-in or needs a different way to load libraries.
-% For now, we keep it as it's standard.
+% For now, we keep it as its standard.
 :- use_module(library(random)).
 
 % --- Main Start Game Predicate ---

@@ -24,7 +24,7 @@ skill_data('Ember', fire, 40, burn, 100, 3, 2, hp).
 skill_data('Water Gun', water, 40, none, 0, 0, 0, none).
 skill_data('Gust', flying, 30, none, 0, 0, 0, none).
 skill_data('Fire Spin', fire, 35, burn, 100, 5, 2, hp).
-skill_data('Bubble', water, 0, stat_change, 100, -3, 0, atk).
+skill_data('Bubble', water, 30, stat_change, 100, -3, 0, atk).
 skill_data('Thunder Shock', electric, 40, failed_attack, 20, 0, 0, none).
 skill_data('Quick Attack', normal, 30, first_strike, 100, 0, 0, none).
 skill_data('Rock Throw', rock, 50, none, 0, 0, 0, none).
@@ -78,7 +78,7 @@ base_exp_given_defeat(legendary, 40).
 catch_rate_base(common, 40).
 catch_rate_base(rare, 30).
 catch_rate_base(epic, 25).
-catch_rate_base(legendary, 280).
+catch_rate_base(legendary, 20).
 
 % --- Map Constants ---
 map_width(8).
